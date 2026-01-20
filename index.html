@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+  
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/be4f7a4058.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8189e653bb.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
@@ -22,8 +22,12 @@
                     <li><a href="#services">Service</a></li>
                     <li><a href="#portfolio">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
-                  
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                 <!-- <img src="moon.png" alt="" id="icon"> -->
+                 <i class="fa-solid fa-moon" id="icon"></i>
+                 <i class="fas fa-bars" onclick="openmenu()"></i>
+ 
                
 
             </nav>
@@ -49,8 +53,7 @@
             </div>
             <div class="about-col-2">
                 <h1 class="subtitle">About <span>me</span></h1>
-                <p>I am a Computer Science Engineer . I'm seeking an Internship where i can apply my skills in
-                    java development and increae my experience. I'm interning as a frontend Engineer . 
+                <p>I am a Software Enginneer.
                 </p>
                    
                     <div class="tab-titles">
@@ -62,18 +65,21 @@
               
                 <div class="tab-content active-tab" id="skills">
                     <ul>
-                        <li><span>java Programmer</span>
+                        <li><span>Software Engineer</span>
+                        <li><span>Data Analysis</span>
+                        <li><span>python Programmer</span>
                     </ul>
                 </div>
                 <div class="tab-content" id="experience">
                     <ul>
-                        <li><span>Mar,2023-Apr,2023</span><br>AWS</li>
+                        <li><span>26-july,2024</span><br>Certificate of Completation for AWS Academy Graduate - AWS Academy Cloud Foundations</li>
+                         <a href="https://www.credly.com/go/1NvsUNeM" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </ul>
                 </div>
                 <div class="tab-content" id="education">
                     <ul>
-                        <li> <span>2021-Present</span> <br>study B.tech in Computer science & Engineering from 
-                            Netaji Subhash Engineering College </li>
+                        <li> <span>2021-Present</span> <br>study B.tech in Information Technology from Netaju Subhash Engineering College
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -86,16 +92,52 @@
 
  <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">My <span>works</span></h1>
+        <h1 class="sub-title">My <span>Projects</span></h1>
         <div class="work-list">
             <div class="work">
-                <img src="Weather-Application.png">
+               
                 <div class="layer">
-                    <h3>Weather-Application</h3>
-                    <p>Feature : 1.temperature 2.Condition of the sky 3.Humidity 4.Speed of the wind 5.Presure of the area 6.time</p>
-                    <a href="https://github.com/AnweshaNemo/Weather-Application" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <br>
+                    <h3>Portfolio Project:</h3>
+                    
+                    <p>This project is a Personal Portfolio Website developed using HTML, CSS, and JavaScript.
+                    The main purpose of this project is to showcase personal details, skills, projects, and contact information in a professional and interactive way.</p>
+                    </br>
                 </div>
             </div>
+         
+        <div class="work-list">
+            <div class="work">
+                
+                <div class="layer">
+                    <br>
+                    <h3>Ambulance booking and tracking System:</h3>
+                    
+
+                    <p>The Ambulance Booking and Tracking System is a web-based application developed using HTML, CSS, and JavaScript.
+                    The main goal of this project is to provide fast and easy ambulance booking and real-time tracking during emergency situations.
+
+                    This system helps users to quickly request an ambulance and track its location, reducing response time and saving lives..</p>
+                    </br>
+                </div>
+            </div>
+           
+            <div class="work">
+               
+                <div class="layer">
+                   <br>
+                    
+                    <h3>Weather Application:</h3>
+                    
+
+                    <p>The Weather Application is a web-based project developed using HTML, CSS, and JavaScript.
+                    The primary objective of this application is to provide accurate, real-time weather information for any city entered by the user, including details such as temperature, humidity, wind speed, and current weather conditions.The application features a clean, intuitive, and user-friendly interface, enabling users to quickly access current weather data in an efficient and reliable manner </p>
+                    
+                    </br>   
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/AnweshaNemo" class="btn" target="_blank">See more</a>
     </div>
 </div>
 
@@ -114,11 +156,14 @@
                     <a href="https://www.instagram.com/anw_esha22" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/anwesha-nemo-a603a1222" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <a href="" download class="btn btn-2">Download CV</a>
+                <a href="file:///D:/CV-Anu/ANWESHA_it_is_for_you_edit_this___.pdf" download class="btn btn-2">Download CV</a>
+               
+                
                
             </div>
             <div class="contact-right">
-                <form action="">
+             
+                <form action="https://formspree.io/f/mreegdew" method="POST">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your E-mail" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
@@ -136,6 +181,34 @@
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 <script src="script.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  (function(){
+    emailjs.init("YOUR_PUBLIC_KEY"); // EmailJS dashboard থেকে
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "YOUR_SERVICE_ID",
+      "YOUR_TEMPLATE_ID",
+      this
+    ).then(
+      function(){
+        alert("Message sent successfully!");
+        document.getElementById("contact-form").reset();
+      },
+      function(error){
+        alert("Failed to send message. Try again.");
+      }
+    );
+  });
+</script>
+
 
 </body>
 </html>
